@@ -187,7 +187,7 @@ small span {
     color: white;
     font-size: 1.9rem;
     margin-left: 2.4rem;
-    margin-top: 5rem;
+    margin-top: 7.5rem;
   
   }
 
@@ -222,15 +222,15 @@ small span {
   }
 
   small{
-    margin-left: 1.8rem;
+    margin-left: 1.3rem;
     margin-bottom: 0;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
    
     
   }
 
   small span{
-    margin-left: 5rem;
+    margin-left: 4rem;
     margin-top: 1rem;
    
     }
@@ -238,7 +238,7 @@ small span {
     input {
       /* display: block; */
       /* width: 100%; */
-      padding: 0.4rem 1.5rem;
+      padding: 0.4rem 2.5rem;
       
       
      }
@@ -258,7 +258,7 @@ small span {
 
      .errorMessage{
     
-      margin-left: 8rem;
+      margin-left: 6.8rem;
       font-size: 0.5rem; 
       white-space: nowrap;
       
@@ -268,7 +268,7 @@ small span {
     .error-icon{
       position: absolute;
       top: 17%;
-      margin-left: 13.8rem;
+      margin-left: 12rem;
       display: none;
     
     
