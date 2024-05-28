@@ -217,6 +217,8 @@ small span {
     height: 25rem;
     padding-top: 0.2rem;
     width: 80vw;
+    padding-left: 1rem;
+    padding-right: 1rem;
     
    
   }
@@ -240,7 +242,7 @@ small span {
       /* width: 100%; */
       padding: 0.4rem 2.5rem;
       
-      .
+      
      }
 
      button{
