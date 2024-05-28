@@ -354,12 +354,17 @@ small span {
   
   }
 
+  .error-icon{
+    top: 22%;
+    margin-left: 13.5rem;
+  }
+
 
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px){
   small{
-    margin-left: 0.3rem ;
+    margin-left: 1.9rem ;
     white-space: nowrap;
   }
 
