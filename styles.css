@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('./images/bg-intro-desktop.png') no-repeat center;
+  background-color: var(--red);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+   display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.container-text,
+.container-form {
+  flex: 1;
+}
+
+h1 {
+  color: white;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: white;
+  font-size: 1.05rem;
+  opacity: 90%;
+}
+
+h4 {
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.35);
+  margin-bottom: 1.5rem;
+}
+
+h4 span {
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.7rem;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  margin-top: 1.2rem;
+  border: 1px solid var(--grayish-blue);
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  
+  
+}
+
+input.error {
+  border: 1px solid var(--red);
+}
+
+input:hover,
+input:focus {
+  outline: 1.5px solid var(--blue);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: var(--green);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  text-transform: uppercase;
+  /* margin-bottom: 1rem; */
+  margin-top: 1.2rem ;
+}
+
+small {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  color: var(--grayish-blue);
+  /* gap: 0.25rem; */
+  font-size: x-small;
+  margin-left: 3rem;
+  margin-bottom: 2rem;
+
+}
+
+small span {
+  color: var(--red);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.errorMessage{
+  color: hsl(0, 100%, 74%);
+  margin-left: 17rem;
+  font-size: x-small;
+  
+
+}
+
+ .input-container{
+  position: relative;
+} 
+
+ .error-icon{
+  position: absolute;
+  top: 25%;
+  margin-left: 23rem;
+  display: none;
+
+
+} 
+
+
+.password{
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 37px;
+  cursor: pointer;
+  top: 20px ;
+  display: none;
+  
+  
+}
+
+.toggle-password::before {
+  content: '\1F441'; 
+}
+
+ .toggle-password.visible::before {
+  content: url('./images/slash-eye-icon.svg');
+} 
+
+@media screen and (max-width:480px){
+  .container {
+    /* max-width: 80vw; */
+    flex-direction: column;
+    margin-top: 3.5rem;
+    gap: 2rem;
+  }
+  
+
+  h1 {
+    color: white;
+    font-size: 1.9rem;
+    margin-left: 2.4rem;
+    margin-top: 5rem;
+  
+  }
+
+  p {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  h4 {
+    
+    padding: 1rem 2rem;
+    font-size: medium;
+    
+  }
+
+  .input-container{
+    flex: 0;
+    
+  }
+
+  .container-form{
+    padding-bottom: 3rem;
+  }
+
+  form {
+    
+    height: 25rem;
+    padding-top: 0.2rem;
+    width: 80vw;
+    
+   
+  }
+
+  small{
+    margin-left: 1.8rem;
+    margin-bottom: 0;
+    font-size: 0.6rem;
+   
+    
+  }
+
+  small span{
+    margin-left: 5rem;
+    margin-top: 1rem;
+   
+    }
+
+    input {
+      /* display: block; */
+      /* width: 100%; */
+      padding: 0.4rem 1.5rem;
+      
+      
+     }
+
+     button{
+      padding: 0.5rem 0;
+     }
+
+     .toggle-password {
+      
+      right: 30px;
+      
+      top: 10px ;
+      
+      
+    }
+
+     .errorMessage{
+    
+      margin-left: 8rem;
+      font-size: 0.5rem; 
+      white-space: nowrap;
+      
+    
+    } 
+
+    .error-icon{
+      position: absolute;
+      top: 17%;
+      margin-left: 13.8rem;
+      display: none;
+    
+    
+    } 
+
+    
+    
+  }
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+  
+  h4{
+     padding: 1rem 0.5rem;
+     font-size: small; 
+     width: 50vw
+  }
+
+  h1 {
+    
+    font-size: 1.7rem !important;
+    line-height: 1.1;
+   
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.4rem;
+    margin-top: 1.2rem;
+    border: 1px solid var(--grayish-blue);
+    border-radius: 0.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    
+    
+  }
+  .container {
+    
+    gap: 2rem !important;
+    /* margin: 0 auto; */
+    
+    max-width: 100% !important;
+    padding: 0 10px;
+  
+
+  }
+
+  form{
+
+    width: 50vw;
+    padding: 1rem !important;
+  }
+
+  small{
+    margin-left: 1.5rem;
+    font-size: xx-small;
+  }
+
+  small span {
+    margin-left: 5.5rem;
+
+  }
+
+  .toggle-password {
+      
+    right: 30px;
+    
+    top: 10px ;
+    
+    
+  }
+
+  .errorMessage{
+    color: hsl(0, 100%, 74%);
+    margin-left: 7.8rem;
+    font-size: xx-small;
+    white-space: nowrap;
+    
+  
+  }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  small{
+    margin-left: 0.3rem ;
+    white-space: nowrap;
+  }
+
+  small span{
+    font-weight: 500;
+  }
+
+  h4{
+    padding: 1rem 1.5rem;
+  }
+
+  .container{
+    max-width: 100% !important;
+    padding: 0 10px;
+  }
+
+  h1{
+    font-size: 2.2rem !important;
+  }
+
+  form{
+    padding: 1rem !important;
+  }
+
+  .errorMessage{
+    
+    margin-left: 17rem;
+    font-size: xx-small;
+    white-space: nowrap;
+    
+    
+  
+  }
+
+  
+}
